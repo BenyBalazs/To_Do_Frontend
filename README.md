@@ -1,3 +1,3 @@
 # TodoFrontend
 
-A webfejlesztés tárgy tejljesítéséhez készült frontend alkalmazás angularban.
+A webfejlesztés tárgy teljesítéséhez készült frontend alkalmazás angularban.
