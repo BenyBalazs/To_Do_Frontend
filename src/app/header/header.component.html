@@ -1,0 +1,15 @@
+<script
+  src="../../../../angular8-springboot-basic-auth-login-logout-master/angular-login-logout/src/app/menu/menu.component.ts"></script>
+<mat-toolbar>
+  <mat-toolbar-row class="titleRow">
+    <span class="menuTitle">Tennivaló nyomonkövető</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-divider class="divider"></mat-divider>
+<mat-toolbar *ngIf="isLoggedIn">
+  <mat-toolbar-row>
+    <span>{{username}} tennivalói</span>
+    <span class="example-spacer"></span>
+    <app-logout></app-logout>
+  </mat-toolbar-row>
+</mat-toolbar>

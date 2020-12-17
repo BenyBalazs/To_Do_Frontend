@@ -1,0 +1,16 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.menuTitle {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-size: 3em;
+}
+.divider {
+  border-top-color: #673AB7;
+  border-top-width: 3px;
+}
+.titleRow {
+  margin-bottom: 10px;
+}

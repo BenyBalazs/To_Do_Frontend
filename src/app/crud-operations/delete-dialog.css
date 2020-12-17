@@ -1,0 +1,13 @@
+.center{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+.align{
+  display: inline-block;
+  margin: auto;
+}
+.register{
+  margin-right: 10px;
+}

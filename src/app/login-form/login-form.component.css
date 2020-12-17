@@ -1,0 +1,19 @@
+.formContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+
+}
+.formBorder{
+  display: inline-block;
+  margin: auto;
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #673AB7;
+  border-radius: 10px;
+}
+
+.login {
+  margin-right: 20px;
+}

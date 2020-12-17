@@ -1,0 +1,31 @@
+<div class="center">
+  <div class="align">
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>Felhasználónév</mat-label>
+      <input matInput type="text" [(ngModel)]="usernameLocal">
+      <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="usernameLocal=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <BR>
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>E-mail</mat-label>
+      <input matInput type="email" [(ngModel)]="email" ngModel email="true">
+      <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="email=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <BR>
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>Jelszó</mat-label>
+      <input matInput type="password" [(ngModel)]="passwordLocal">
+      <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="passwordLocal=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <BR>
+    <button class="register" mat-raised-button color="primary" (click)=handleRegister()>Regisztráció </button>
+    <div class="error" *ngIf='registerFail'>{{errorMessage}}</div>
+    <div class="success" *ngIf='registerSuccess'>A regisztráció sikeres</div>
+  </div>
+</div>

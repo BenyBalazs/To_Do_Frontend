@@ -1,0 +1,28 @@
+<div class="center">
+  <div class="align">
+    <div class="title">Hozzáadás</div>
+    <BR>
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>Cím</mat-label>
+      <input matInput type="text" [(ngModel)]="title">
+      <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="title=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <BR>
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>Határidő</mat-label>
+      <!-- #docregion toggle -->
+      <label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="dueDate">
+      </label>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <!-- #enddocregion toggle -->
+    </mat-form-field>
+    <button class="register" mat-raised-button color="primary" (click)=handleSave()> Mentés </button>
+    <div class="error" *ngIf='editFail'>{{errorMessage}}</div>
+    <div class="success" *ngIf='editSuccess'>A szerkesztés sikeres.</div>
+  </div>
+</div>
+

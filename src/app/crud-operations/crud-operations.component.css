@@ -1,0 +1,41 @@
+.container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+mat-header-cell{
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+.mat-elevation-z8{
+  width: 80%;
+  margin-top: 10px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+.centered{
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.id{
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+::ng-deep .mat-sort-header-container {
+  display:flex;
+  justify-content:center;
+}
+.edit{
+  margin-right: 10px;
+}

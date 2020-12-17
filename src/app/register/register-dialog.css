@@ -1,0 +1,17 @@
+.center{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+.align{
+  display: inline-block;
+  margin: auto;
+}
+
+.success {
+  color: lawngreen;
+}
+.error {
+  color: crimson;
+}
